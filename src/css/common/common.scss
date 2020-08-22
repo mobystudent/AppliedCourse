@@ -1,0 +1,19 @@
+body {
+	background: $white;
+	max-width: 1920px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: column;
+}
+
+.main {
+	flex: 1 0 auto;
+	background: $white;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+
+.hide {
+	display: none !important;
+}

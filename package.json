@@ -1,0 +1,49 @@
+{
+  "name": "starter-kit",
+  "version": "1.0.0",
+  "description": "Окружение для разработки веб-проектов",
+  "main": "index.js",
+  "scripts": {
+    "watch": "gulp watch --dev",
+    "prodwatch": "gulp watch",
+    "devbuild": "gulp --dev",
+    "build": "gulp",
+    "clean": "gulp clean"
+  },
+  "keywords": [],
+  "author": "mobystudent",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "bows": "^1.7.2",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "rollup": "^1.32.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-terser": "^5.3.0",
+    "vinyl-ftp": "^0.6.1",
+    "yargs": "^15.3.1"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/node": "^7.8.7",
+    "@babel/polyfill": "^7.8.7",
+    "dotdotdot-js": "^4.0.11",
+    "jquery": "^3.4.1",
+    "jquery.counterup": "^2.1.0",
+    "slick-carousel": "^1.8.1"
+  }
+}

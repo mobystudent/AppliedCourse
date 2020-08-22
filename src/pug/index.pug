@@ -8,5 +8,27 @@ block content
 		include header.pug
 
 		main.main
+			section.represent
+				.represent__date
+					time.represent__time(datetime='2020-10-09') 09/10
+					span.represent__date-text старт курса
+				.represent__content
+					.represent__descrip
+						span.represent__subtitle Прикладной курс
+						h1.represent__title.represent__title--main Как открыть #[br] свое дело.
+						p.represent__text.represent__text--main Прикладной курс “Как открыть свое дело” - это возможность дополнить жизненный опыт практичными знаниями для развития собственного бизнеса. Инвестируя в себя сейчас, вы сэкономите в будущем, принимая верные решения.
+					.represent__format
+						article.represent__item
+							svg.icon.icon--in-person
+								use.icon__item(xlink:href="#in-person")
+							.represent__wrap
+								h3.represent__title.represent__title--format ФОРМАТ обучения
+								span.represent__text.represent__text--format очно и онлайн
+						article.represent__item
+							svg.icon.icon--video
+								use.icon__item(xlink:href="#video")
+							.represent__wrap
+								h3.represent__title.represent__title--format видеозапись
+								span.represent__text.represent__text--format все занятия доступны на видеозаписях
 
 		include footer.pug

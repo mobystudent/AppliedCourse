@@ -1,3 +1,20 @@
 .icon {
+	&--burger {
+		width: 26px;
+		height: 16px;
+	}
 
+	&--in-person {
+		width: 63px;
+		height: 63px;
+		display: inline-block;
+		margin-right: 60px;
+	}
+
+	&--video {
+		width: 63px;
+		height: 63px;
+		display: inline-block;
+		margin-right: 60px;
+	}
 }

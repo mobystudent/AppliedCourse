@@ -1,0 +1,107 @@
+.represent {
+	display: flex;
+
+	&__date {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: center;
+		background: $yellow;
+		width: 455px;
+		min-height: 475px;
+		padding-top: 5px;
+		flex: 0 0 auto;
+	}
+
+	&__time {
+		font: 32px $GothamProBlack;
+		width: 156px;
+		height: 156px;
+		border: 8px solid $black;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		letter-spacing: .1em;
+		margin-bottom: 15px;
+	}
+
+	&__date-text {
+		font: 14px $GothamProBold;
+		letter-spacing: .2em;
+		text-transform: uppercase;
+	}
+
+	&__content {
+		padding: 145px 130px 60px;
+		display: flex;
+		justify-content: space-between;
+		flex: 1 0 auto;
+	}
+
+	&__descrip {
+		max-width: 595px;
+	}
+
+	&__title {
+		&--main {
+			font: 35px $GothamProBold;
+			letter-spacing: .005em;
+			margin-bottom: 60px;
+		}
+
+		&--format {
+			font: 14px $GothamProBold;
+			letter-spacing: .2em;
+			margin-bottom: 5px;
+			text-transform: uppercase;
+		}
+	}
+
+	&__subtitle {
+		font: 14px $GothamProBold;
+		letter-spacing: .005em;
+		color: $mediumGray;
+		letter-spacing: .2em;
+		text-transform: uppercase;
+		display: inline-block;
+		margin-bottom: 5px;
+		padding-left: 5px;
+	}
+
+	&__text {
+		font: 14px $GothamProLight;
+		color: $darkGray;
+		letter-spacing: .075em;
+
+		&--main {
+			line-height: 28px;
+		}
+
+		&--format {
+			line-height: 24px;
+			max-width: 200px;
+		}
+	}
+
+	&__format {
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-end;
+		padding-bottom: 20px;
+	}
+
+	&__item {
+		display: flex;
+		width: 350px;
+
+		&:not(:last-child) {
+			margin-bottom: 65px;
+		}
+	}
+
+	&__wrap {
+		display: flex;
+		flex-flow: column;
+		padding-top: 10px;
+	}
+}

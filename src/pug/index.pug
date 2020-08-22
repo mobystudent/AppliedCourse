@@ -30,5 +30,24 @@ block content
 							.represent__wrap
 								h3.represent__title.represent__title--format видеозапись
 								span.represent__text.represent__text--format все занятия доступны на видеозаписях
+								
+			section.timetable
+				.timetable__title-wrap
+					h2.timetable__title Расписание #[br] занятий:
+				.timetable__content
+					.timetable__table
+						article.timetable__day
+							span.timetable__name ПН
+							.timetable__wrap
+								time.timetable__time.timetable__time--start(datetime='12:30') 12:30
+								time.timetable__time.timetable__time--end(datetime='18:00') 18:00
+						article.timetable__day
+							span.timetable__name Ср
+							.timetable__wrap
+								time.timetable__time.timetable__time--start(datetime='12:30') 12:30
+								time.timetable__time.timetable__time--end(datetime='18:00') 18:00
+					article.info
+						small.info__sign ?
+						p.info__descrip Занятия курса проходят в утренних и вечерних группах, два раза в день. Вы можете сами выбирать удобное для учебы время.
 
 		include footer.pug

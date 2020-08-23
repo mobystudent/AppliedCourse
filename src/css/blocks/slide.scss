@@ -1,0 +1,37 @@
+.slide {
+	width: 980px;
+	margin: 0 auto;
+	display: flex;
+
+	&__avatar {
+		width: 134px;
+		height: 134px;
+		flex: 0 0 auto;
+		margin-right: 130px;
+	}
+
+	&__data {
+		display: flex;
+		flex-flow: column;
+		margin-bottom: 45px;
+	}
+
+	&__name {
+		font: 18px $GothamProBold;
+		letter-spacing: .075em;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+
+	&__position {
+		font: 14px $GothamPro;
+		letter-spacing: .075em;
+		color: $darkLightGray;
+	}
+
+	&__descrip {
+		font: 14px/28px $GothamProLight;
+		letter-spacing: .075em;
+		color: $darkGray;
+	}
+}

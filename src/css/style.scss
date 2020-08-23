@@ -32,13 +32,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import "blocks/info.scss";
 @import "blocks/question.scss";
 @import "blocks/table.scss";
+@import "blocks/slide.scss";
 
 //Sections
 @import "sections/header.scss";
 @import "sections/footer.scss";
-@import "sections/contacts.scss";
 @import "sections/represent.scss";
 @import "sections/timetable.scss";
 @import "sections/questions.scss";
 @import "sections/detailed-table.scss";
 @import "sections/section.scss";
+@import "sections/format.scss";
+@import "sections/reviews.scss";

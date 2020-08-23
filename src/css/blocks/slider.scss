@@ -1,10 +1,66 @@
 .slider {
 	&__content {
+		margin-bottom: 130px;
 	}
 
 	&__control {
+		display: flex;
+		justify-content: space-between;
+		padding-right: 10px;
+	}
+
+	&__num {
+		&--active {
+			font: 30px $GothamProMed;
+			letter-spacing: .075em;
+		}
+
+		&--total {
+			font: 18px $GothamProMed;
+			color: $darkLightGray;
+		}
+	}
+
+	&__separ {
+		font: 18px $GothamProMed;
+		color: $darkLightGray;
+		margin: 0 10px;
+	}
+
+	&__arrows {
+		display: flex;
+	}
+
+	&__btn {
+		width: 36px;
+		height: 36px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		transition: background .25s ease-in-out;
+
+		&:hover {
+			background: $yellow;
+		}
+
+		&--prev {
+			margin-right: 15px;
+		}
 	}
 
 	&__arrow {
+		width: 18px;
+		height: 10px;
+		background: url("img/arrow.png") no-repeat;
+		background-size: cover;
+
+		&--prev {
+			transform: rotate(90deg);
+		}
+
+		&--next{
+			transform: rotate(-90deg);
+		}
 	}
 }

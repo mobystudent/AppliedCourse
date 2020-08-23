@@ -31,6 +31,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import "blocks/form.scss";
 @import "blocks/info.scss";
 @import "blocks/question.scss";
+@import "blocks/table.scss";
 
 //Sections
 @import "sections/header.scss";
@@ -39,3 +40,5 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import "sections/represent.scss";
 @import "sections/timetable.scss";
 @import "sections/questions.scss";
+@import "sections/detailed-table.scss";
+@import "sections/section.scss";

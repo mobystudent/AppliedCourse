@@ -1,0 +1,58 @@
+.table {
+	color: $darkerGray;
+
+	&:not(:last-child) {
+		margin-bottom: 35px;
+	}
+
+	tr {
+		&:nth-child(2n) {
+			background: $lightGray;
+		}
+
+		&:hover {
+			td {
+				background: $yellow;
+			}
+		}
+	}
+
+	th {
+		font: 15px $GothamProBold;
+		text-align: right;
+		padding-top: 10px;
+		padding-bottom: 25px;
+
+		&:first-child {
+			width: 245px;
+			letter-spacing: .1em;
+			padding-left: 45px;
+			padding-right: 45px;
+		}
+
+		&:last-child {
+			text-transform: uppercase;
+			letter-spacing: .2em;
+			border-left: 10px solid $lightGray;
+			padding-left: 35px;
+			padding-right: 35px;
+		}
+	}
+
+	td {
+		font: 14px $GothamProLight;
+		text-align: right;
+		transition: background .25s ease-in-out;
+		padding: 12px 40px;
+
+		&:first-child {
+			width: 245px;
+			letter-spacing: .075em;
+		}
+
+		&:last-child {
+			letter-spacing: .025em;
+			border-left: 10px solid $lightGray;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.section {
+	position: relative;
+
+	&__name {
+		font: 14px $GothamProBold;
+		display: inline-block;
+		text-transform: uppercase;
+		letter-spacing: .2em;
+		position: absolute;
+		top: 190px;
+		right: 105px;
+		padding-right: 85px;
+		transform: rotate(-90deg);
+		transform-origin: right;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: 0;
+			width: 45px;
+			height: 3px;
+			transform: translateY(-50%);
+			background: $black;
+		}
+	}
+}

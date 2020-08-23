@@ -11,6 +11,12 @@
 		margin-bottom: 40px;
 	}
 
+	&:nth-child(2) { //delete
+		.question__body {
+			display: block !important;
+		}
+	}
+
 	&--active {
 		.question__btn {
 			&:before {

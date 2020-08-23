@@ -1,0 +1,147 @@
+.question {
+	background: $white;
+
+	&:hover {
+		.icon--question {
+			transform: scale(1.2);
+		}
+	}
+
+	&:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
+	&--active {
+		.question__btn {
+			&:before {
+				transform: rotate(180deg);
+			}
+
+			&:after {
+				opacity: 1;
+			}
+		}
+	}
+
+	&__header {
+		display: flex;
+		border-top: 1px solid $darkLightGray;
+		border-bottom: 1px solid $darkLightGray;
+	}
+
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 160px;
+		height: 160px;
+		background: $yellow;
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+		flex: 1 0 auto;
+		padding: 38px 100px 38px 110px;
+	}
+
+	&__wrap-title {
+		width: 435px;
+		padding-right: 50px;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		position: relative;
+
+		&--main {
+			font: 18px/32px $GothamProBold;
+			letter-spacing: .2em;
+
+			&:before {
+				counter-increment: list;
+				content: counter(list) ". ";
+			}
+		}
+
+		&--sub {
+			font: 15px/32px $GothamProBold;
+			letter-spacing: .15em;
+			margin-bottom: 10px;
+
+			&:before {
+				counter-increment: list;
+				content: counters(list, '.') " ";
+			}
+		}
+	}
+
+	&__wrap-descrip {
+		display: flex;
+		align-items: center;
+		flex: 1 0 auto;
+	}
+
+	&__descrip {
+		font: 14px/28px $GothamProLight;
+		color: $darkGray;
+		letter-spacing: .075em;
+
+		&--main {
+			max-width: 440px;
+		}
+	}
+
+	&__btn {
+		font: 15px $GothamProBold;
+		text-transform: uppercase;
+		letter-spacing: .2em;
+		color: $black;
+		padding-right: 55px;
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: 10px;
+			width: 18px;
+			height: 10px;
+			transform: translateY(-50%);
+			transform-origin: 9px 3px;
+			transition: transform .25s ease-in-out;
+			background: url("../img/arrow.png") no-repeat;
+			background-size: cover;
+			z-index: 1;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: 3px;
+			width: 32px;
+			height: 32px;
+			transform: translateY(-50%);
+			transition: opacity .25s ease-in-out;
+			background: $yellow;
+			opacity: 0;
+			z-index: 0;
+		}
+	}
+
+	&__body {
+		display: none;
+	}
+
+	&__list {
+		padding: 110px 60px 110px 160px;
+		counter-reset: list;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+}

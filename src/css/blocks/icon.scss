@@ -17,4 +17,33 @@
 		display: inline-block;
 		margin-right: 60px;
 	}
+
+	&--question {
+		transition: transform .25s ease-in-out;
+
+		&-1 {
+			width: 60px;
+			height: 60px;
+		}
+
+		&-2 {
+			width: 60px;
+			height: 60px;
+		}
+
+		&-3 {
+			width: 46px;
+			height: 60px;
+		}
+
+		&-4 {
+			width: 56px;
+			height: 56px;
+		}
+
+		&-5 {
+			width: 55px;
+			height: 49px;
+		}
+	}
 }

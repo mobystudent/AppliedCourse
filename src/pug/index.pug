@@ -47,7 +47,39 @@ block content
 								time.timetable__time.timetable__time--start(datetime='12:30') 12:30
 								time.timetable__time.timetable__time--end(datetime='18:00') 18:00
 					article.info
-						small.info__sign ?
+						a.info__btn(href="#") ?
 						p.info__descrip Занятия курса проходят в утренних и вечерних группах, два раза в день. Вы можете сами выбирать удобное для учебы время.
+						
+			section.questions
+				
+				- const titleQues = ["поиск идеи", "старс бизнеса", "персональный бренд", "искусство интуитивной фотографии", "технолонии маркетинга"];
+				- const descripQues = ["Eu eros sodales, malesuada tellus id, iaculis diam. Vestibulum sodales, felis quis pharetra ultrices, lectus ex laoreet felis.", "Malesuada tellus id, iaculis diam. Vestibulum sodales, felis quis pharetra ultrices, lectusex laoreet felis, vel condimentum nisi nulla et odio.", "Malesuada tellus id, iaculis diam. Vestibulum sodales, felis quis pharetra ultrices, lectusex laoreet felis, vel condimentum nisi nulla et odio.", "Malesuada tellus id, iaculis diam. Vestibulum sodales, felis quis pharetra ultrices, lectusex laoreet felis, vel condimentum nisi nulla et odio.", "Malesuada tellus id, iaculis diam. Vestibulum sodales, felis quis pharetra ultrices, lectusex laoreet felis, vel condimentum nisi nulla et odio."];
+				
+				ul.questions__list
+					
+					- for (let i = 0; i < 5; i++)
+					
+						li.question.question--active
+							header.question__header
+								.question__icon
+									svg.icon.icon--question(class=`icon--question-${i+1}`)
+										use.icon__item(xlink:href=`#ques-${i+1}`)
+								.question__content
+									.question__wrap-title
+										h3.question__title.question__title--main=titleQues[i]
+									.question__wrap-descrip
+										p.question__descrip.question__descrip--main=descripQues[i]
+									a.question__btn(href="#") подробнее о блоке
+							.question__body
+								ul.question__list
+									
+									- const subTitleQues = ['architecto beatae vitae', 'sit amet', 'Quis autem', 'voluptas nulla pariatur'];
+									- const subDescripQues = ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.', 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"', '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'];
+									
+									- for (let j = 0; j < 4; j++)
+									
+										li.question__item
+											h4.question__title.question__title--sub=subTitleQues[j]
+											p.question__descrip.question__descrip--sub=subDescripQues[j]
 
 		include footer.pug

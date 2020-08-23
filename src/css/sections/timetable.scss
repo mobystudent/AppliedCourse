@@ -1,13 +1,12 @@
 .timetable {
-	background: $lightGray;
 	display: flex;
+	padding-bottom: 150px;
 
 	&__title-wrap {
 		display: flex;
 		flex-flow: column;
 		align-items: center;
 		justify-content: center;
-		background: $white;
 		width: 455px;
 		min-height: 315px;
 		flex: 0 0 auto;
@@ -20,6 +19,7 @@
 	}
 
 	&__content {
+		background: $lightGray;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;

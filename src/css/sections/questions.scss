@@ -1,0 +1,7 @@
+.questions {
+	background: $lightGray;
+	
+	&__list {
+		counter-reset: list;
+	}
+}

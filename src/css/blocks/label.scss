@@ -15,6 +15,16 @@
 			margin-right: 35px;
 		}
 
+		&:hover {
+			.label__text {
+				color: $black;
+
+				&:before {
+					background: $yellow;
+				}
+			}
+		}
+
 		input {
 			position: absolute;
 			z-index: -1;
@@ -39,6 +49,7 @@
 		color: $darkGray;
 		padding-left: 35px;
 		cursor: pointer;
+		transition: color .25s ease-in-out;
 
 		&:before {
 			content: '';
@@ -50,7 +61,7 @@
 			background: $lightGray;
 			transform: translateY(-50%);
 			border-radius: 50%;
-			transition: transform .25s ease-in-out;
+			transition: background .25s ease-in-out;
 		}
 
 		&:after {

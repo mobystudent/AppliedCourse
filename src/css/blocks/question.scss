@@ -2,8 +2,33 @@
 	background: $white;
 
 	&:hover {
-		.icon--question {
-			transform: scale(1.2);
+		&:first-child {
+			.icon--question {
+				transform: rotate(45deg);
+			}
+		}
+
+		&:nth-child(2) {
+			.icon--question {
+				transform: translate(10px, -10px);
+			}
+		}
+		&:nth-child(3) {
+			.icon--question {
+				transform: rotate(-30deg);
+			}
+		}
+
+		&:nth-child(4) {
+			.icon--question {
+				transform: scale(1.1);
+			}
+		}
+
+		&:last-child {
+			.icon--question {
+				transform: translateX(10px);
+			}
 		}
 	}
 

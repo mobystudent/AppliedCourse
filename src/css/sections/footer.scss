@@ -1,3 +1,75 @@
 .footer {
+	display: flex;
+	border-top: 1px solid $darkLightGray;
 
+	&__part {
+		&--left {
+			width: calc(50% + 30px);
+			padding-right: 80px;
+			border-right: 1px solid $darkLightGray;
+		}
+
+		&--right {
+			width: calc(50% - 30px);
+			padding: 115px 70px 0 115px;
+		}
+	}
+
+	&__contacts {
+		padding-top: 105px;
+		padding-left: 130px;
+		margin-bottom: 115px;
+	}
+
+	&__address {
+		margin-bottom: 70px;
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			width: 28px;
+			height: 42px;
+			top: 5px;
+			right: 10px;
+			background: url("img/point.png") no-repeat;
+			background-size: cover;
+		}
+	}
+
+	&__title {
+		font: 35px $GothamProBold;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+	}
+
+	&__descrip {
+		font: 14px $GothamProLight;
+		letter-spacing: .075em;
+		color: $darkGray;
+	}
+
+	&__img-wrap {
+		position: relative;
+		display: flex;
+		justify-content: flex-end;
+		margin-bottom: 60px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: -10px;
+			right: -20px;
+			width: 42px;
+			height: 42px;
+			border-radius: 50%;
+			background: $yellow;
+			z-index: -1;
+		}
+	}
+
+	&__img {
+		width: 32px;
+		height: 43px;
+	}
 }

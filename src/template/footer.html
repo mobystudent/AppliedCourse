@@ -1,2 +1,41 @@
 
-<footer class="footer"></footer>
+<footer class="footer">
+  <div class="footer__part footer__part--left">
+    <div class="footer__contacts">
+      <div class="footer__address">
+        <h2 class="footer__title">контакты</h2>
+        <address class="footer__descrip">Харьков, Отакара Яроша 18, БЦ «Солярис», 4й этаж</address>
+      </div>
+      <div class="contacts"><a class="contacts__link contacts__link--phone" href="tel:+380999729999">099-972-99-99</a><a class="contacts__link contacts__link--mail" href="mail:INFO@ican.business">INFO@ican.business</a><a class="contacts__link contacts__link--telegram" href="#" target="_blank">telegram link</a></div>
+    </div>
+    <div class="map"></div>
+  </div>
+  <div class="footer__part footer__part--right">
+    <div class="footer__img-wrap"><img class="footer__img" src="img/lock.png" alt="lock"/></div>
+    <form class="footer__form form">
+      <div class="form__inputs">
+        <label class="label label--field">
+          <input class="input input--field" type="text" placeholder="Имя / фамилия"/>
+        </label>
+        <label class="label label--field">
+          <input class="input input--field" type="email" placeholder="Email-адрес"/>
+        </label>
+        <label class="label label--field">
+          <input class="input input--field" type="phone" placeholder="Телефон"/>
+        </label>
+      </div>
+      <div class="form__format">
+        <p class="form__text">В каком формате желаете обучаться на курсе?</p>
+        <div class="form__radio-btns">
+          <label class="label label--radio">
+            <input class="input input--radio" type="radio" name="format"/><span class="label__text">онлайн</span>
+          </label>
+          <label class="label label--radio">
+            <input class="input input--radio" type="radio" name="format"/><span class="label__text">очно</span>
+          </label>
+        </div>
+      </div>
+      <button class="btn btn--form" type="submit">Регистрация</button>
+    </form>
+  </div>
+</footer>

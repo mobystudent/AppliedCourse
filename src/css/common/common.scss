@@ -18,3 +18,10 @@ body {
 .hide {
 	display: none !important;
 }
+
+.map {
+	width: 910px;
+	height: 330px;
+	background: url("img/map.png") no-repeat;
+	background-size: cover;
+}

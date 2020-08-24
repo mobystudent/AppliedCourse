@@ -1,0 +1,70 @@
+.label {
+	display: flex;
+
+	&--field {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&--radio {
+		display: flex;
+		align-items: center;
+
+		&:not(:last-child) {
+			margin-right: 35px;
+		}
+
+		input {
+			position: absolute;
+			z-index: -1;
+			opacity: 0;
+		}
+
+		input:checked + .label__text {
+			&:before {
+				background: $yellow;
+			}
+
+			&:after {
+				opacity: 1;
+			}
+		}
+	}
+
+	&__text {
+		position: relative;
+		font: 14px $GothamPro;
+		letter-spacing: .075em;
+		color: $darkGray;
+		padding-left: 35px;
+		cursor: pointer;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 18px;
+			height: 18px;
+			background: $lightGray;
+			transform: translateY(-50%);
+			border-radius: 50%;
+			transition: transform .25s ease-in-out;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 5px;
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: $black;
+			transform: translateY(-50%);
+			opacity: 0;
+			transition: opacity .25s ease-in-out;
+		}
+	}
+}

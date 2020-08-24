@@ -13,6 +13,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 //Variables & mixins
 @import "helpers/colors.scss";
 @import "helpers/fonts.scss";
+@import "helpers/placeholder.scss";
 
 //Defaults
 @import "common/common.scss";
@@ -33,6 +34,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import "blocks/question.scss";
 @import "blocks/table.scss";
 @import "blocks/slide.scss";
+@import "blocks/contacts.scss";
+@import "blocks/label.scss";
 
 //Sections
 @import "sections/header.scss";

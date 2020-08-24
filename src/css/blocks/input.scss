@@ -1,3 +1,10 @@
 .input {
-	width: 100%;
+	&--field {
+		width: 100%;
+		font: 14px $GothamProBold;
+		letter-spacing: .2em;
+		@include placeholder(14px $GothamProBold, $black);
+		padding: 15px 0 25px;
+		border-bottom: 4px solid $lightGray;
+	}
 }

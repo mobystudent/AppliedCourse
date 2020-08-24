@@ -6,4 +6,16 @@
 		height: 16px;
 		display: inline-block;
 	}
+
+	&--form {
+		font: 14px $GothamProBold;
+		letter-spacing: .2em;
+		text-transform: uppercase;
+		background: $yellow;
+		padding: 15px 40px;
+		width: 250px;
+		display: block;
+		margin-right: -5px;
+		margin-left: auto;
+	}
 }

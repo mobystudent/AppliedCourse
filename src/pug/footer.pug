@@ -1,1 +1,32 @@
 footer.footer
+	.footer__part.footer__part--left
+		.footer__contacts
+			.footer__address
+				h2.footer__title контакты
+				address.footer__descrip Харьков, Отакара Яроша 18, БЦ «Солярис», 4й этаж
+			.contacts
+				a.contacts__link.contacts__link--phone(href="tel:+380999729999") 099-972-99-99
+				a.contacts__link.contacts__link--mail(href="mail:INFO@ican.business") INFO@ican.business
+				a.contacts__link.contacts__link--telegram(href="#" target="_blank") telegram link
+		.map
+	.footer__part.footer__part--right
+		.footer__img-wrap
+			img.footer__img(src="img/lock.png" alt="lock")
+		form.footer__form.form
+			.form__inputs
+				label.label.label--field
+					input.input.input--field(type="text" placeholder="Имя / фамилия")
+				label.label.label--field
+					input.input.input--field(type="email" placeholder="Email-адрес")
+				label.label.label--field
+					input.input.input--field(type="phone" placeholder="Телефон")
+			.form__format
+				p.form__text В каком формате желаете обучаться на курсе?
+				.form__radio-btns
+					label.label.label--radio
+						input.input.input--radio(type="radio" name="format")
+						span.label__text онлайн
+					label.label.label--radio
+						input.input.input--radio(type="radio" name="format")
+						span.label__text очно
+			button.btn.btn--form(type="submit") Регистрация

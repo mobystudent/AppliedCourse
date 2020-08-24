@@ -1,0 +1,59 @@
+.contacts {
+	display: flex;
+	flex-flow: column;
+
+	&__link {
+		font: 14px $GothamProBold;
+		letter-spacing: .2em;
+		text-transform: uppercase;
+		padding-left: 60px;
+		position: relative;
+		color: $black;
+
+		&:not(:last-child) {
+			margin-bottom: 35px;
+		}
+
+		&--phone {
+			&:before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 26px;
+				height: 25px;
+				transform: translateY(-50%);
+				background: url("img/phone.png") no-repeat;
+				background-size: cover;
+			}
+		}
+
+		&--mail {
+			&:before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 25px;
+				height: 17px;
+				transform: translateY(-50%);
+				background: url("img/mail.png") no-repeat;
+				background-size: cover;
+			}
+		}
+
+		&--telegram {
+			&:before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 29px;
+				height: 19px;
+				transform: translateY(-50%);
+				background: url("img/telegram.png") no-repeat;
+				background-size: cover;
+			}
+		}
+	}
+}

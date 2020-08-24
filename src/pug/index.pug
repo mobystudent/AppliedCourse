@@ -117,25 +117,26 @@ block content
 							
 			section.format.section
 				span.section__name.section__name--format формат обучения
-				.format__view
-					.format__item
-						.format__img.format__img--full-time
-							svg.icon.icon--full-time
-								use.icon__item(xlink:href="#full-time")
-						.format__name очно
-					.format__line
+				.format__block
+					.format__view
+						.format__item
+							.format__img.format__img--full-time
+								svg.icon.icon--full-time
+									use.icon__item(xlink:href="#full-time")
+							.format__name очно
+						.format__line
+							
+							- for (let i = 0; i < 15; i++)
+							
+								small.format__line-item
 						
-						- for (let i = 0; i < 15; i++)
-						
-							small.format__line-item
-					
-					.format__item
-						.format__img.format__img--online
-							svg.icon.icon--online
-								use.icon__item(xlink:href="#online")
-						.format__name онлайн
-						
-				p.format__descrip Очные студенты присутствуют на лекциях в аудитории, а онлайн-студенты смотрят прямую трансляцию из любого места с доступом в Интернет. Онлайн обучение равноценно очному и отличается только форматом присутствия на лекциях.
+						.format__item
+							.format__img.format__img--online
+								svg.icon.icon--online
+									use.icon__item(xlink:href="#online")
+							.format__name онлайн
+							
+					p.format__descrip Очные студенты присутствуют на лекциях в аудитории, а онлайн-студенты смотрят прямую трансляцию из любого места с доступом в Интернет. Онлайн обучение равноценно очному и отличается только форматом присутствия на лекциях.
 				
 			section.reviews.section
 				span.section__name.section__name--reviews section name

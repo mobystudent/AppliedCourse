@@ -1,6 +1,11 @@
 .format {
-	padding: 300px 555px 150px;
+	padding: 300px 30px 150px;
 	border-bottom: 1px solid $darkLightGray;
+
+	&__block {
+		width: 810px;
+		margin: 0 auto;
+	}
 
 	&__view {
 		display: flex;

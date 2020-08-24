@@ -1,9 +1,11 @@
 .detailed-table {
 	background: $lightGray;
-	padding: 195px 305px 230px 270px;
+	padding: 195px 65px 230px 30px;
 
 	&__block {
 		background: $white;
+		width: 1155px;
+		margin: 0 auto;
 		padding: 165px 100px 135px 80px;
 	}
 }

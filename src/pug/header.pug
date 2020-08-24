@@ -2,3 +2,14 @@ header.header
 	small.btn.btn--burger
 		svg.icon.icon--burger
 			use.icon__item(xlink:href="#burger")
+				
+.burger
+	ul.menu
+		
+		- const menuName = ["Условия поступления", "программа курса", "расписание занятий", "Контакты"];
+		- const menu = ["#contacts", "#contacts", "#contacts", "#contacts"];
+		
+		- for (let i = 0; i < 4; i++)
+		
+			li.menu__item
+				a.menu__link(href=menu[i])=menuName[i]

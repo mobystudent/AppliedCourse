@@ -1,0 +1,30 @@
+.menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	height: 100%;
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__link {
+		cursor: pointer;
+		font: 18px $GothamProBold;
+		letter-spacing: .2em;
+		color: $white;
+		text-transform: uppercase;
+		transition: color .25s ease-in-out;
+
+		&:hover {
+			color: $yellow;
+		}
+
+		&--active {
+			color: $yellow;
+		}
+	}
+}

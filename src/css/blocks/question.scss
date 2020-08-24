@@ -36,24 +36,6 @@
 		margin-bottom: 40px;
 	}
 
-	&:nth-child(2) { //delete
-		.question__body {
-			display: block !important;
-		}
-	}
-
-	&--active {
-		.question__btn {
-			&:before {
-				transform: rotate(180deg);
-			}
-
-			&:after {
-				opacity: 1;
-			}
-		}
-	}
-
 	&__header {
 		display: flex;
 		border-top: 1px solid $darkLightGray;
@@ -158,6 +140,16 @@
 			background: $yellow;
 			opacity: 0;
 			z-index: 0;
+		}
+
+		&--active {
+			&:before {
+				transform: rotate(180deg);
+			}
+
+			&:after {
+				opacity: 1;
+			}
 		}
 	}
 

@@ -6,17 +6,27 @@
 		height: 32px;
 		border: 3px solid $black;
 		border-radius: 50%;
+		color: $black;
 		font: 20px $GothamProBold;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
 
-	&__descrip {
-		display: none;
+	&__wrap {
+		width: 0;
 		position: absolute;
 		top: -60px;
-		left: -410px;
+		right: 55px;
+		overflow: hidden;
+		transition: width .25s ease-in-out;
+
+		&--show {
+			width: 390px;
+		}
+	}
+
+	&__descrip {
 		width: 390px;
 		background: $white;
 		border: 1px solid $darkLightGray;

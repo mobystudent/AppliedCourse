@@ -8,7 +8,7 @@ block content
 		include header.pug
 
 		main.main
-			section.represent
+			section#represent.represent
 				.represent__date
 					time.represent__time(datetime='2020-10-09') 09/10
 					span.represent__date-text старт курса
@@ -48,9 +48,10 @@ block content
 								time.timetable__time.timetable__time--end(datetime='18:00') 18:00
 					article.info
 						a.info__btn(href="#") ?
-						p.info__descrip Занятия курса проходят в утренних и вечерних группах, два раза в день. Вы можете сами выбирать удобное для учебы время.
+						.info__wrap
+							p.info__descrip Занятия курса проходят в утренних и вечерних группах, два раза в день. Вы можете сами выбирать удобное для учебы время.
 						
-			section.questions
+			section#questions.questions
 				
 				- const titleQues = ["поиск идеи", "старс бизнеса", "персональный бренд", "искусство интуитивной фотографии", "технолонии маркетинга"];
 				- const descripQues = ["Eu eros sodales, malesuada tellus id, iaculis diam. Vestibulum sodales, felis quis pharetra ultrices, lectus ex laoreet felis.", "Malesuada tellus id, iaculis diam. Vestibulum sodales, felis quis pharetra ultrices, lectusex laoreet felis, vel condimentum nisi nulla et odio.", "Malesuada tellus id, iaculis diam. Vestibulum sodales, felis quis pharetra ultrices, lectusex laoreet felis, vel condimentum nisi nulla et odio.", "Malesuada tellus id, iaculis diam. Vestibulum sodales, felis quis pharetra ultrices, lectusex laoreet felis, vel condimentum nisi nulla et odio.", "Malesuada tellus id, iaculis diam. Vestibulum sodales, felis quis pharetra ultrices, lectusex laoreet felis, vel condimentum nisi nulla et odio."];
@@ -59,7 +60,7 @@ block content
 					
 					- for (let i = 0; i < 5; i++)
 					
-						li.question.question--active
+						li.question
 							header.question__header
 								.question__icon
 									svg.icon.icon--question(class=`icon--question-${i+1}`)
@@ -82,7 +83,7 @@ block content
 											h4.question__title.question__title--sub=subTitleQues[j]
 											p.question__descrip.question__descrip--sub=subDescripQues[j]
 											
-			section.detailed-table.section
+			section#detailed-table.detailed-table.section
 				span.section__name.section__name--detailed-table Подробное расписание
 				.detailed-table__block
 					table.table
@@ -140,19 +141,22 @@ block content
 				span.section__name.section__name--reviews section name
 				.slider
 					.slider__content
-						article.slide
-							.slide__avatar
-								img.slide__img(src="img/user.jpg" alt="avatar user")
-							.slide__content
-								.slide__data
-									span.slide__name Alexey CHEREDNICHENKO
-									small.slide__position head admin
-								p.slide__descrip At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt.
+						
+						- for (let i = 0; i < 3; i++)
+						
+							article.slide
+								.slide__avatar
+									img.slide__img(src="img/user.jpg" alt="avatar user")
+								.slide__content
+									.slide__data
+										span.slide__name Alexey CHEREDNICHENKO
+										small.slide__position head admin
+									p.slide__descrip At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt.
 					.slider__control
 						.slider__count
-							span.slider__num.slider__num--active 2
+							span.slider__num.slider__num--active 0
 							small.slider__separ /
-							small.slider__num.slider__num--total 3
+							small.slider__num.slider__num--total 0
 						.slider__arrows
 							a.slider__btn.slider__btn--prev(href="#")
 								.slider__arrow.slider__arrow--prev

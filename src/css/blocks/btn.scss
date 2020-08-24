@@ -4,7 +4,29 @@
 	&--burger {
 		width: 26px;
 		height: 16px;
-		display: inline-block;
+		display: flex;
+		flex-flow: column;
+		justify-content: space-between;
+
+		&-active {
+			.btn__item {
+				background: $white;
+
+				&:first-child {
+					transform: rotate(-45deg);
+					transform-origin: 24px 0;
+				}
+
+				&:nth-child(2) {
+					opacity: 0;
+				}
+
+				&:last-child {
+					transform: rotate(45deg);
+					transform-origin: 24px 0;
+				}
+			}
+		}
 	}
 
 	&--form {
@@ -22,5 +44,13 @@
 		&:hover {
 			box-shadow: 0px 4px 10px 2px rgba($black, 0.2);
 		}
+	}
+
+	&__item {
+		width: 26px;
+		height: 1px;
+		background: $black;
+		transition: transform 0.25s ease-in-out, color 0.25s ease-in-out;
+		transform-origin: 100% 0;
 	}
 }

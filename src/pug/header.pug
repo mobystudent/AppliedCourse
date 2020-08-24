@@ -1,13 +1,14 @@
 header.header
-	small.btn.btn--burger
-		svg.icon.icon--burger
-			use.icon__item(xlink:href="#burger")
+	a.btn.btn--burger(href="#")
+		small.btn__item
+		small.btn__item
+		small.btn__item
 				
 .burger
 	ul.menu
 		
 		- const menuName = ["Условия поступления", "программа курса", "расписание занятий", "Контакты"];
-		- const menu = ["#contacts", "#contacts", "#contacts", "#contacts"];
+		- const menu = ["#represent", "#questions", "#detailed-table", "#contacts"];
 		
 		- for (let i = 0; i < 4; i++)
 		

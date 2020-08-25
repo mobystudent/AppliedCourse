@@ -34,6 +34,10 @@
 
 	&:not(:last-child) {
 		margin-bottom: 40px;
+
+		@media screen and (max-width: 767px) {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__header {
@@ -48,7 +52,14 @@
 		align-items: center;
 		width: 160px;
 		height: 160px;
+		flex: 0 0 auto;
 		background: $yellow;
+
+		@media screen and (max-width: 767px) {
+			max-width: 70px;
+			width: 100%;
+			height: auto;
+		}
 	}
 
 	&__content {
@@ -56,11 +67,25 @@
 		align-items: center;
 		flex: 1 0 auto;
 		padding: 38px 100px 38px 110px;
+
+		@media screen and (max-width: 767px) {
+			width: 100%;
+			padding: 15px 15px 15px 25px;
+			flex: auto;
+			flex-flow: column;
+			align-items: flex-start;
+		}
 	}
 
 	&__wrap-title {
 		width: 435px;
 		padding-right: 50px;
+
+		@media screen and (max-width: 767px) {
+			width: 100%;
+			padding-right: 0;
+			margin-bottom: 10px;
+		}
 	}
 
 	&__title {
@@ -70,6 +95,11 @@
 		&--main {
 			font: 18px/32px $GothamProBold;
 			letter-spacing: .2em;
+
+			@media screen and (max-width: 767px) {
+				font-size: 14px;
+				line-height: 20px;
+			}
 
 			&:before {
 				counter-increment: list;
@@ -82,6 +112,12 @@
 			letter-spacing: .15em;
 			margin-bottom: 10px;
 
+			@media screen and (max-width: 767px) {
+				font-size: 12px;
+				line-height: 24px;
+				margin-bottom: 5px;
+			}
+
 			&:before {
 				counter-increment: list;
 				content: counters(list, '.') " ";
@@ -93,12 +129,21 @@
 		display: flex;
 		align-items: center;
 		flex: 1 0 auto;
+
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
 	}
 
 	&__descrip {
 		font: 14px/28px $GothamProLight;
 		color: $darkGray;
 		letter-spacing: .075em;
+
+		@media screen and (max-width: 767px) {
+			font-size: 12px;
+			line-height: 24px;
+		}
 
 		&--main {
 			max-width: 440px;
@@ -113,6 +158,11 @@
 		padding-right: 55px;
 		position: relative;
 
+		@media screen and (max-width: 767px) {
+			font-size: 11px;
+			padding-right: 30px;
+		}
+
 		&:before {
 			content: '';
 			position: absolute;
@@ -126,6 +176,12 @@
 			background: url("../img/arrow.png") no-repeat;
 			background-size: cover;
 			z-index: 1;
+
+			@media screen and (max-width: 767px) {
+				width: 12px;
+				height: 7px;
+				transform-origin: 6px 2px;
+			}
 		}
 
 		&:after {
@@ -140,6 +196,12 @@
 			background: $yellow;
 			opacity: 0;
 			z-index: 0;
+
+			@media screen and (max-width: 767px) {
+				right: 5px;
+				width: 22px;
+				height: 22px;
+			}
 		}
 
 		&--active {
@@ -160,11 +222,19 @@
 	&__list {
 		padding: 110px 60px 110px 160px;
 		counter-reset: list;
+
+		@media screen and (max-width: 767px) {
+			padding: 30px 20px;
+		}
 	}
 
 	&__item {
 		&:not(:last-child) {
 			margin-bottom: 30px;
+
+			@media screen and (max-width: 767px) {
+				margin-bottom: 20px;
+			}
 		}
 	}
 }

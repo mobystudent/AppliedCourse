@@ -6,5 +6,12 @@
 		@include placeholder(14px $GothamProBold, $black);
 		padding: 15px 0 25px;
 		border-bottom: 4px solid $lightGray;
+
+		@media screen and (max-width: 767px) {
+			font-size: 12px;
+			padding: 10px 0 20px;
+			border-bottom-width: 2px;
+			@include placeholder(12px $GothamProBold, $black);
+		}
 	}
 }

@@ -2,46 +2,80 @@
 	padding: 300px 30px 150px;
 	border-bottom: 1px solid $darkLightGray;
 
+	@media screen and (max-width: 767px) {
+		padding: 130px 20px 90px;
+	}
+
 	&__block {
 		width: 810px;
 		margin: 0 auto;
+
+		@media screen and (max-width: 767px) {
+			width: 100%;
+			max-width: 440px;
+		}
 	}
 
 	&__view {
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 120px;
+
+		@media screen and (max-width: 767px) {
+			flex-flow: column;
+			margin-bottom: 50px;
+		}
+	}
+
+	&__item {
+		@media screen and (max-width: 767px) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&:first-child {
+			@media screen and (max-width: 767px) {
+				margin-bottom: 40px;
+			}
+		}
 	}
 
 	&__img {
 		margin-bottom: 50px;
 		position: relative;
 
+		@media screen and (max-width: 767px) {
+			margin-bottom: 0;
+			margin-right: 35px;
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			width: 126px;
+			height: 126px;
+			border-radius: 50%;
+			background: $yellow;
+			z-index: -1;
+
+			@media screen and (max-width: 767px) {
+				width: 86px;
+				height: 86px;
+			}
+		}
+
 		&--full-time {
 			&:before {
-				content: '';
-				position: absolute;
-				bottom: -25px;
 				left: -40px;
-				width: 126px;
-				height: 126px;
-				border-radius: 50%;
-				background: $yellow;
-				z-index: -1;
+				bottom: -25px;
 			}
 		}
 
 		&--online {
 			&:before {
-				content: '';
-				position: absolute;
 				top: -25px;
 				right: -40px;
-				width: 126px;
-				height: 126px;
-				border-radius: 50%;
-				background: $yellow;
-				z-index: -1;
 			}
 		}
 	}
@@ -51,12 +85,21 @@
 		letter-spacing: .2em;
 		text-transform: uppercase;
 		text-align: center;
+
+		@media screen and (max-width: 767px) {
+			font-size: 14px;
+		}
 	}
 
 	&__line {
 		display: flex;
 		align-items: center;
 		margin-bottom: 60px;
+
+		@media screen and (max-width: 767px) {
+			flex-flow: column;
+			margin-bottom: 40px;
+		}
 
 		&-item {
 			width: 7px;
@@ -66,6 +109,17 @@
 
 			&:not(:last-child) {
 				margin-right: 15px;
+
+				@media screen and (max-width: 767px) {
+					margin-right: 0;
+					margin-bottom: 10px;
+				}
+			}
+
+			&:nth-child(n+8) {
+				@media screen and (max-width: 767px) {
+					display: none;
+				}
 			}
 		}
 	}
@@ -75,5 +129,10 @@
 		letter-spacing: .075em;
 		color: $darkGray;
 		text-align: center;
+
+		@media screen and (max-width: 767px) {
+			font-size: 12px;
+			line-height: 24px;
+		}
 	}
 }

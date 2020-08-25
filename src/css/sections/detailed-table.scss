@@ -2,10 +2,26 @@
 	background: $lightGray;
 	padding: 195px 65px 230px 30px;
 
+	@media screen and (max-width: 767px) {
+		padding: 130px 20px 90px;
+	}
+
+	&__wrap {
+		@media screen and (max-width: 767px) {
+			width: 100%;
+			overflow-x: scroll;
+		}
+	}
+
 	&__block {
 		background: $white;
 		width: 1155px;
 		margin: 0 auto;
 		padding: 165px 100px 135px 80px;
+
+		@media screen and (max-width: 767px) {
+			width: 550px;
+			padding: 60px 30px;
+		}
 	}
 }

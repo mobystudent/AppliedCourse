@@ -3,6 +3,10 @@
 
 	&:not(:last-child) {
 		margin-bottom: 35px;
+
+		@media screen and (max-width: 767px) {
+			margin-bottom: 30px;
+		}
 	}
 
 	tr {
@@ -17,42 +21,77 @@
 		}
 	}
 
-	th {
-		font: 15px $GothamProBold;
+	th, td {
 		text-align: right;
-		padding-top: 10px;
-		padding-bottom: 25px;
 
 		&:first-child {
 			width: 245px;
+
+			@media screen and (max-width: 767px) {
+				width: 190px;
+			}
+		}
+
+		&:last-child {
+			border-left: 10px solid $lightGray;
+
+			@media screen and (max-width: 767px) {
+				border-left-width: 5px;
+			}
+		}
+	}
+
+	th {
+		font: 15px $GothamProBold;
+		padding-top: 10px;
+		padding-bottom: 25px;
+
+		@media screen and (max-width: 767px) {
+			font-size: 12px;
+			padding-top: 5px;
+			padding: 15px;
+		}
+
+		&:first-child {
 			letter-spacing: .1em;
 			padding-left: 45px;
 			padding-right: 45px;
+
+			@media screen and (max-width: 767px) {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
 		}
 
 		&:last-child {
 			text-transform: uppercase;
 			letter-spacing: .2em;
-			border-left: 10px solid $lightGray;
 			padding-left: 35px;
 			padding-right: 35px;
+
+			@media screen and (max-width: 767px) {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
 		}
 	}
 
 	td {
 		font: 14px $GothamProLight;
-		text-align: right;
 		transition: background .25s ease-in-out;
 		padding: 12px 40px;
 
+		@media screen and (max-width: 767px) {
+			font-size: 12px;
+			padding: 9px 20px;
+		}
+
 		&:first-child {
-			width: 245px;
 			letter-spacing: .075em;
 		}
 
 		&:last-child {
 			letter-spacing: .025em;
-			border-left: 10px solid $lightGray;
 		}
 	}
 }

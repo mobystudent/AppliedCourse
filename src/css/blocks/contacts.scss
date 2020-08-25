@@ -10,8 +10,17 @@
 		position: relative;
 		color: $black;
 
+		@media screen and (max-width: 767px) {
+			padding-left: 40px;
+			font-size: 12px;
+		}
+
 		&:not(:last-child) {
 			margin-bottom: 35px;
+
+			@media screen and (max-width: 767px) {
+				margin-bottom: 20px;
+			}
 		}
 
 		&--phone {
@@ -25,6 +34,11 @@
 				transform: translateY(-50%);
 				background: url("img/phone.png") no-repeat;
 				background-size: cover;
+
+				@media screen and (max-width: 767px) {
+					width: 19px;
+					height: 18px;
+				}
 			}
 		}
 
@@ -39,6 +53,11 @@
 				transform: translateY(-50%);
 				background: url("img/mail.png") no-repeat;
 				background-size: cover;
+
+				@media screen and (max-width: 767px) {
+					width: 18px;
+					height: 12px;
+				}
 			}
 		}
 
@@ -53,6 +72,11 @@
 				transform: translateY(-50%);
 				background: url("img/telegram.png") no-repeat;
 				background-size: cover;
+
+				@media screen and (max-width: 767px) {
+					width: 22px;
+					height: 14px;
+				}
 			}
 		}
 	}

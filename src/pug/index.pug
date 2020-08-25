@@ -85,35 +85,36 @@ block content
 											
 			section#detailed-table.detailed-table.section
 				span.section__name.section__name--detailed-table Подробное расписание
-				.detailed-table__block
-					table.table
-						tbody
-							tr
-								th 85 часов
-								th 1. поиск идеи
-							tr
-								td 04.09 - 06.09
-								td Ut enim ad minima veniam
-							tr
-								td 06.09 - 08.09
-								td Quis nostrum
-							tr
-								td 11.09 - 13.09
-								td Exercitationem
-					table.table
-						tbody
-							tr
-								th 100 часов
-								th 2. старт бизнеса
-							tr
-								td 02.10 - 06.10
-								td Ullam corporis suscipit
-							tr
-								td 09.10 - 03.11
-								td Laboriosam
-							tr
-								td 06.11 - 19.11
-								td Weekend
+				.detailed-table__wrap
+					.detailed-table__block
+						table.table
+							tbody
+								tr
+									th 85 часов
+									th 1. поиск идеи
+								tr
+									td 04.09 - 06.09
+									td Ut enim ad minima veniam
+								tr
+									td 06.09 - 08.09
+									td Quis nostrum
+								tr
+									td 11.09 - 13.09
+									td Exercitationem
+						table.table
+							tbody
+								tr
+									th 100 часов
+									th 2. старт бизнеса
+								tr
+									td 02.10 - 06.10
+									td Ullam corporis suscipit
+								tr
+									td 09.10 - 03.11
+									td Laboriosam
+								tr
+									td 06.11 - 19.11
+									td Weekend
 							
 			section.format.section
 				span.section__name.section__name--format формат обучения
@@ -146,9 +147,9 @@ block content
 						- for (let i = 0; i < 3; i++)
 						
 							article.slide
-								.slide__avatar
-									img.slide__img(src="img/user.jpg" alt="avatar user")
-								.slide__content
+								.slide__wrap
+									.slide__avatar
+										img.slide__img(src="img/user.jpg" alt="avatar user")
 									.slide__data
 										span.slide__name Alexey CHEREDNICHENKO
 										small.slide__position head admin

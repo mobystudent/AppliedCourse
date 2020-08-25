@@ -1,6 +1,10 @@
 .represent {
 	display: flex;
 
+	@media screen and (max-width: 767px) {
+		flex-flow: column;
+	}
+
 	&__date {
 		display: flex;
 		flex-flow: column;
@@ -11,6 +15,12 @@
 		min-height: 475px;
 		padding-top: 5px;
 		flex: 0 0 auto;
+
+		@media screen and (max-width: 767px) {
+			width: 100%;
+			min-height: 100%;
+			padding: 50px 0;
+		}
 	}
 
 	&__time {
@@ -23,12 +33,25 @@
 		justify-content: center;
 		letter-spacing: .1em;
 		margin-bottom: 15px;
+
+		@media screen and (max-width: 767px) {
+			font-size: 18px;
+			margin-bottom: 10px;
+			width: 112px;
+			height: 112px;
+			border-width: 6px;
+		}
+
 	}
 
 	&__date-text {
 		font: 14px $GothamProBold;
 		letter-spacing: .2em;
 		text-transform: uppercase;
+
+		@media screen and (max-width: 767px) {
+			font-size: 12px;
+		}
 	}
 
 	&__content {
@@ -36,10 +59,21 @@
 		display: flex;
 		justify-content: space-between;
 		flex: 1 0 auto;
+
+		@media screen and (max-width: 767px) {
+			flex-flow: column;
+			padding: 50px 30px 40px;
+			max-width: 440px;
+			margin: 0 auto;
+		}
 	}
 
 	&__descrip {
 		max-width: 595px;
+
+		@media screen and (max-width: 767px) {
+			margin-bottom: 40px;
+		}
 	}
 
 	&__title {
@@ -47,6 +81,11 @@
 			font: 35px $GothamProBold;
 			letter-spacing: .005em;
 			margin-bottom: 60px;
+
+			@media screen and (max-width: 767px) {
+				font-size: 24px;
+				margin-bottom: 25px;
+			}
 		}
 
 		&--format {
@@ -66,6 +105,11 @@
 		display: inline-block;
 		margin-bottom: 5px;
 		padding-left: 5px;
+
+		@media screen and (max-width: 767px) {
+			font-size: 12px;
+			padding-left: 0;
+		}
 	}
 
 	&__text {
@@ -73,8 +117,16 @@
 		color: $darkGray;
 		letter-spacing: .075em;
 
+		@media screen and (max-width: 767px) {
+			font-size: 12px;
+		}
+
 		&--main {
 			line-height: 28px;
+
+			@media screen and (max-width: 767px) {
+				line-height: 24px;
+			}
 		}
 
 		&--format {
@@ -88,14 +140,26 @@
 		flex-flow: column;
 		justify-content: flex-end;
 		padding-bottom: 20px;
+
+		@media screen and (max-width: 767px) {
+			padding-bottom: 0;
+		}
 	}
 
 	&__item {
 		display: flex;
 		width: 350px;
 
+		@media screen and (max-width: 767px) {
+			width: 100%;
+		}
+
 		&:not(:last-child) {
 			margin-bottom: 65px;
+
+			@media screen and (max-width: 767px) {
+				margin-bottom: 25px;
+			}
 		}
 	}
 
@@ -103,5 +167,9 @@
 		display: flex;
 		flex-flow: column;
 		padding-top: 10px;
+
+		@media screen and (max-width: 767px) {
+			padding-top: 5px;
+		}
 	}
 }

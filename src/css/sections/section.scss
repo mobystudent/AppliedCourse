@@ -10,6 +10,11 @@
 		transform: rotate(-90deg);
 		transform-origin: right;
 
+		@media screen and (max-width: 767px) {
+			font-size: 12px;
+			transform: rotate(0);
+		}
+
 		&:before {
 			content: '';
 			position: absolute;
@@ -19,6 +24,11 @@
 			height: 3px;
 			transform: translateY(-50%);
 			background: $black;
+
+			@media screen and (max-width: 767px) {
+				height: 2px;
+				width: 30px;
+			}
 		}
 
 		&--detailed-table {
@@ -26,18 +36,35 @@
 			right: 105px;
 			padding-right: 85px;
 
+			@media screen and (max-width: 767px) {
+				top: 80px;
+				right: 30px;
+				padding-right: 55px;
+			}
 		}
 
 		&--format {
 			top: 155px;
 			right: 100px;
 			padding-right: 60px;
+
+			@media screen and (max-width: 767px) {
+				top: 80px;
+				right: 30px;
+				padding-right: 55px;
+			}
 		}
 
 		&--reviews {
 			top: 150px;
 			right: 105px;
 			padding-right: 55px;
+			
+			@media screen and (max-width: 767px) {
+				top: 80px;
+				right: 30px;
+				padding-right: 55px;
+			}
 		}
 	}
 }

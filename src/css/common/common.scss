@@ -25,4 +25,10 @@ body {
 	background: url("img/map.png") no-repeat;
 	background-size: cover;
 	overflow: hidden;
+
+	@media screen and (max-width: 767px) {
+		height: 180px;
+		width: calc(100% + 40px);
+		margin: 0 -20px;
+	}
 }

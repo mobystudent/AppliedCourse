@@ -13,6 +13,11 @@
 
 		&:not(:last-child) {
 			margin-right: 35px;
+
+			@media screen and (max-width: 767px) {
+				margin-right: 0;
+				margin-bottom: 15px;
+			}
 		}
 
 		&:hover {
@@ -50,6 +55,11 @@
 		padding-left: 35px;
 		cursor: pointer;
 		transition: color .25s ease-in-out;
+
+		@media screen and (max-width: 767px) {
+			font-size: 12px;
+			line-height: 18px;
+		}
 
 		&:before {
 			content: '';

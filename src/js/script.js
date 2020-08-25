@@ -25,8 +25,8 @@ function hint() {
 
 function slider() {
 	$('.slider .slider__content').slick({
-		variableWidth: true,
 		speed: 500,
+		slidesToShow: 1,
 		easing: 'ease-in-out',
 		appendArrows: '.slider__control',
 		prevArrow: '.slider__btn--prev',
@@ -69,5 +69,6 @@ function burger() {
 	$(".btn--burger").click(function() {
 		$(".btn--burger").toggleClass("btn--burger-active");
 		$(".burger").slideToggle();
+		$(".wrapper").toggleClass("wrapper--hidden");
 	});
 }

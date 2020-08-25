@@ -2,6 +2,12 @@
 	display: flex;
 	padding-bottom: 150px;
 
+	@media screen and (max-width: 767px) {
+		flex-flow: column;
+		padding: 0 30px;
+		margin-bottom: 40px;
+	}
+
 	&__title-wrap {
 		display: flex;
 		flex-flow: column;
@@ -11,11 +17,25 @@
 		min-height: 315px;
 		flex: 0 0 auto;
 		padding-top: 20px;
+
+		@media screen and (max-width: 767px) {
+			width: 100%;
+			min-height: 100%;
+			max-width: 440px;
+			margin: 0 auto 15px;
+			padding-top: 0;
+			align-items: flex-start;
+		}
 	}
 
 	&__title {
 		font: 35px/42px $GothamProBold;
 		letter-spacing: .005em;
+
+		@media screen and (max-width: 767px) {
+			font-size: 24px;
+			line-height: 28px;
+		}
 	}
 
 	&__content {
@@ -25,10 +45,21 @@
 		justify-content: space-between;
 		padding: 0 200px 0 115px;
 		flex: 1 0 auto;
+
+		@media screen and (max-width: 767px) {
+			padding: 15px;
+			width: 100%;
+			max-width: 440px;
+			margin: 0 auto;
+		}
 	}
 
 	&__table {
 		display: flex;
+
+		@media screen and (max-width: 767px) {
+			flex-flow: column;
+		}
 	}
 
 	&__day {
@@ -39,6 +70,11 @@
 
 		&:not(:last-child) {
 			margin-right: 150px;
+
+			@media screen and (max-width: 767px) {
+				margin-right: 0;
+				margin-bottom: 10px;
+			}
 		}
 	}
 
@@ -46,6 +82,11 @@
 		font: 35px $GothamProBold;
 		text-transform: uppercase;
 		margin-right: 30px;
+
+		@media screen and (max-width: 767px) {
+			font-size: 24px;
+			margin-right: 20px;
+		}
 	}
 
 	&__wrap {
@@ -60,6 +101,10 @@
 		letter-spacing: .2em;
 		position: relative;
 		padding-left: 25px;
+
+		@media screen and (max-width: 767px) {
+			font-size: 12px;
+		}
 
 		&:not(:last-child) {
 			margin-bottom: 5px;

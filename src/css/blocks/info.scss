@@ -21,8 +21,17 @@
 		overflow: hidden;
 		transition: width .25s ease-in-out;
 
+		@media screen and (max-width: 767px) {
+			top: -120px;
+			right: -35px;
+		}
+
 		&--show {
 			width: 390px;
+
+			@media screen and (max-width: 767px) {
+				width: 300px;
+			}
 		}
 	}
 
@@ -34,5 +43,12 @@
 		letter-spacing: .075em;
 		color: $darkGray;
 		padding: 28px 35px;
+
+		@media screen and (max-width: 767px) {
+			width: 300px;
+			font-size: 12px;
+			line-height: 20px;
+			padding: 15px 20px;
+		}
 	}
 }

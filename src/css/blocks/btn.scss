@@ -7,8 +7,13 @@
 		display: flex;
 		flex-flow: column;
 		justify-content: space-between;
+		background: $white;
+		box-shadow: 0 0 0 20px $white;
 
 		&-active {
+			background: $black;
+			box-shadow: none;
+
 			.btn__item {
 				background: $white;
 

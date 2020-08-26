@@ -4,6 +4,7 @@ $(window).on('load', () => {
 	slider();
 	controlViewSlides();
 	burger();
+	menu();
 });
 
 function accordion() {
@@ -66,9 +67,17 @@ function _getIndexActiveSlide() {
 }
 
 function burger() {
-	$(".btn--burger").click(function() {
+	$(".btn--burger").click(function(e) {
+		e.preventDefault();
+
 		$(".btn--burger").toggleClass("btn--burger-active");
 		$(".burger").slideToggle();
-		$(".wrapper").toggleClass("wrapper--hidden");
+	});
+}
+
+function menu() {
+	$(".menu__link").click(function() {
+		$(".btn--burger").removeClass("btn--burger-active");
+		$(".burger").slideUp();
 	});
 }

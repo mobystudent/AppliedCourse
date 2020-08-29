@@ -1,6 +1,15 @@
 .form {
 	width: 650px;
 
+	@media screen and (max-width: 1919px) {
+		width: 480px;
+	}
+
+	@media screen and (max-width: 1365px) {
+		width: 100%;
+		max-width: 440px;
+	}
+
 	@media screen and (max-width: 767px) {
 		width: 100%;
 		max-width: 440px;
@@ -10,7 +19,11 @@
 	&__inputs {
 		margin-bottom: 60px;
 
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: 1365px) {
+			margin-bottom: 40px;
+		}
+
+		@media screen and (max-width: 1023px) {
 			margin-bottom: 30px;
 		}
 	}
@@ -21,9 +34,10 @@
 		max-width: 250px;
 		text-transform: uppercase;
 
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: 1023px) {
 			font-size: 12px;
 			line-height: 18px;
+			padding-right: 20px;
 		}
 	}
 
@@ -32,8 +46,12 @@
 		justify-content: space-between;
 		margin-bottom: 35px;
 
+		@media screen and (max-width: 1365px) {
+			margin-bottom: 30px;
+		}
+
 		@media screen and (max-width: 767px) {
-			margin-bottom: 60px;
+			margin-bottom: 50px;
 		}
 	}
 
@@ -41,7 +59,7 @@
 		display: flex;
 		padding-bottom: 15px;
 
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: 1365px) {
 			flex-flow: column;
 			padding-bottom: 0;
 		}

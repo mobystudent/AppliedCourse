@@ -2,8 +2,16 @@
 	background: $lightGray;
 	padding: 195px 65px 230px 30px;
 
+	@media screen and (max-width: 1365px) {
+		padding: 150px 30px 110px;
+	}
+
+	@media screen and (max-width: 1023px) {
+		padding: 130px 20px 70px;
+	}
+
 	@media screen and (max-width: 767px) {
-		padding: 130px 20px 90px;
+		padding: 100px 20px 45px;
 	}
 
 	&__wrap {
@@ -19,9 +27,25 @@
 		margin: 0 auto;
 		padding: 165px 100px 135px 80px;
 
+		@media screen and (max-width: 1919px) {
+			width: 980px;
+		}
+
+		@media screen and (max-width: 1365px) {
+			width: 960px;
+			padding: 100px 30px;
+		}
+
+		@media screen and (max-width: 1023px) {
+			padding: 60px 30px;
+			width: 100%;
+			max-width: 850px;
+		}
+
 		@media screen and (max-width: 767px) {
 			width: 550px;
-			padding: 60px 30px;
+			padding-top: 35px;
+			padding-bottom: 50px;
 		}
 	}
 }

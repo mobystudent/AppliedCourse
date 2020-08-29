@@ -1,6 +1,33 @@
 .slider {
+	width: 1210px;
+	margin: 0 auto;
+
+	@media screen and (max-width: 1919px) {
+		width: 980px;
+	}
+
+	@media screen and (max-width: 1365px) {
+		width: 780px;
+	}
+
+	@media screen and (max-width: 1023px) {
+		width: 620px;
+	}
+
+	@media screen and (max-width: 767px) {
+		width: 280px;
+	}
+
 	&__content {
 		margin-bottom: 130px;
+
+		@media screen and (max-width: 1365px) {
+			margin-bottom: 80px;
+		}
+
+		@media screen and (max-width: 1023px) {
+			margin-bottom: 60px;
+		}
 
 		@media screen and (max-width: 767px) {
 			margin-bottom: 0;
@@ -12,6 +39,10 @@
 		justify-content: space-between;
 		padding-right: 10px;
 
+		@media screen and (max-width: 1365px) {
+			padding-right: 0;
+		}
+
 		@media screen and (max-width: 767px) {
 			display: none;
 		}
@@ -21,11 +52,27 @@
 		&--active {
 			font: 30px $GothamProMed;
 			letter-spacing: .075em;
+
+			@media screen and (max-width: 1365px) {
+				font-size: 24px;
+			}
+
+			@media screen and (max-width: 1023px) {
+				font-size: 20px;
+			}
 		}
 
 		&--total {
 			font: 18px $GothamProMed;
 			color: $darkLightGray;
+
+			@media screen and (max-width: 1365px) {
+				font-size: 16px;
+			}
+
+			@media screen and (max-width: 1023px) {
+				font-size: 14px;
+			}
 		}
 	}
 
@@ -33,6 +80,15 @@
 		font: 18px $GothamProMed;
 		color: $darkLightGray;
 		margin: 0 10px;
+
+		@media screen and (max-width: 1365px) {
+			font-size: 16px;
+		}
+
+		@media screen and (max-width: 1023px) {
+			font-size: 14px;
+			margin: 0 5px;
+		}
 	}
 
 	&__arrows {
@@ -48,12 +104,26 @@
 		cursor: pointer;
 		transition: background .25s ease-in-out;
 
+		@media screen and (max-width: 1365px) {
+			width: 30px;
+			height: 30px;
+		}
+
+		@media screen and (max-width: 1023px) {
+			width: 24px;
+			height: 24px;
+		}
+
 		&:hover {
 			background: $yellow;
 		}
 
 		&--prev {
 			margin-right: 15px;
+
+			@media screen and (max-width: 1023px) {
+				margin-right: 10px;
+			}
 		}
 	}
 
@@ -62,6 +132,11 @@
 		height: 10px;
 		background: url("img/arrow.png") no-repeat;
 		background-size: cover;
+
+		@media screen and (max-width: 1023px) {
+			width: 14px;
+			height: 8px;
+		}
 
 		&--prev {
 			transform: rotate(90deg);

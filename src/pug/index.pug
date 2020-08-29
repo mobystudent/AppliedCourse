@@ -19,13 +19,13 @@ block content
 						p.represent__text.represent__text--main Прикладной курс “Как открыть свое дело” - это возможность дополнить жизненный опыт практичными знаниями для развития собственного бизнеса. Инвестируя в себя сейчас, вы сэкономите в будущем, принимая верные решения.
 					.represent__format
 						article.represent__item
-							svg.icon.icon--in-person
+							svg.icon.icon--represent
 								use.icon__item(xlink:href="#in-person")
 							.represent__wrap
 								h3.represent__title.represent__title--format ФОРМАТ обучения
 								span.represent__text.represent__text--format очно и онлайн
 						article.represent__item
-							svg.icon.icon--video
+							svg.icon.icon--represent
 								use.icon__item(xlink:href="#video")
 							.represent__wrap
 								h3.represent__title.represent__title--format видеозапись
@@ -66,10 +66,11 @@ block content
 									svg.icon.icon--question(class=`icon--question-${i+1}`)
 										use.icon__item(xlink:href=`#ques-${i+1}`)
 								.question__content
-									.question__wrap-title
-										h3.question__title.question__title--main=titleQues[i]
-									.question__wrap-descrip
-										p.question__descrip.question__descrip--main=descripQues[i]
+									.question__wrap-content
+										.question__wrap-title
+											h3.question__title.question__title--main=titleQues[i]
+										.question__wrap-descrip
+											p.question__descrip.question__descrip--main=descripQues[i]
 									a.question__btn(href="#") подробнее о блоке
 							.question__body
 								ul.question__list

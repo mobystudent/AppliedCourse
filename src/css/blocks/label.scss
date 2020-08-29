@@ -4,6 +4,10 @@
 	&--field {
 		&:not(:last-child) {
 			margin-bottom: 20px;
+
+			@media screen and (max-width: 1023px) {
+				margin-bottom: 15px;
+			}
 		}
 	}
 
@@ -14,7 +18,7 @@
 		&:not(:last-child) {
 			margin-right: 35px;
 
-			@media screen and (max-width: 767px) {
+			@media screen and (max-width: 1365px) {
 				margin-right: 0;
 				margin-bottom: 15px;
 			}
@@ -56,9 +60,14 @@
 		cursor: pointer;
 		transition: color .25s ease-in-out;
 
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: 1023px) {
 			font-size: 12px;
 			line-height: 18px;
+			padding-left: 30px;
+		}
+
+		@media screen and (max-width: 767px) {
+			padding-left: 25px;
 		}
 
 		&:before {
@@ -72,6 +81,11 @@
 			transform: translateY(-50%);
 			border-radius: 50%;
 			transition: background .25s ease-in-out;
+
+			@media screen and (max-width: 1023px) {
+				width: 14px;
+				height: 14px;
+			}
 		}
 
 		&:after {
@@ -86,6 +100,12 @@
 			transform: translateY(-50%);
 			opacity: 0;
 			transition: opacity .25s ease-in-out;
+
+			@media screen and (max-width: 1023px) {
+				left: 4px;
+				width: 6px;
+				height: 6px;
+			}
 		}
 	}
 }

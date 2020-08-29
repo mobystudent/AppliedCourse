@@ -7,11 +7,21 @@
 		padding: 15px 0 25px;
 		border-bottom: 4px solid $lightGray;
 
-		@media screen and (max-width: 767px) {
-			font-size: 12px;
+		@media screen and (max-width: 1365px) {
 			padding: 10px 0 20px;
+		}
+
+		@media screen and (max-width: 1023px) {
+			padding-bottom: 15px;
+			font-size: 12px;
 			border-bottom-width: 2px;
 			@include placeholder(12px $GothamProBold, $black);
+		}
+
+		@media screen and (max-width: 767px) {
+			padding-bottom: 10px;
+			font-size: 10px;
+			@include placeholder(10px $GothamProBold, $black);
 		}
 	}
 }

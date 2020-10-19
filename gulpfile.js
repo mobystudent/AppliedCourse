@@ -124,7 +124,7 @@ function gulpWatch() {
 	gulp.watch(path.watch.js, gulp.series(gulpJS));
 }
 
-const dev = gulp.series(clean, gulp.parallel(gulpSass, gulpHTML, gulpPug, gulpFonts, gulpFavicon, gulpJS)),
+const dev = gulp.series(clean, gulp.parallel(gulpSass, gulpHTML, gulpPug, gulpFonts, gulpFavicon, gulpJS, gulpImages)),
 	build = gulp.series(clean, gulp.parallel(gulpSass, gulpHTML, gulpFonts, gulpFavicon, gulpJS, gulpImages));
 
 exports.default = build;

@@ -5,7 +5,7 @@ block title
 
 block content
 	.wrapper
-		include header.pug
+		include header
 
 		main.main
 			section#represent.represent
@@ -147,14 +147,14 @@ block content
 						
 						- for (let i = 0; i < 3; i++)
 						
-							article.slide
-								.slide__wrap
-									.slide__avatar
-										img.slide__img(src="img/user.jpg" alt="avatar user")
-									.slide__data
-										span.slide__name Alexey CHEREDNICHENKO
-										small.slide__position head admin
-									p.slide__descrip At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt.
+							article.slider__item
+								.slider__wrap
+									.slider__avatar
+										img.slider__img(src="img/user.jpg" alt="avatar user")
+									.slider__data
+										span.slider__name Alexey CHEREDNICHENKO
+										small.slider__position head admin
+									p.slider__descrip At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt.
 					.slider__control
 						.slider__count
 							span.slider__num.slider__num--active 0
@@ -166,4 +166,4 @@ block content
 							a.slider__btn.slider__btn--next(href="#")
 								.slider__arrow.slider__arrow--next
 
-		include footer.pug
+		include footer
